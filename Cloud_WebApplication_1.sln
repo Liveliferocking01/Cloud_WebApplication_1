@@ -7,6 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud_WebApplication_1", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud_WebApplication_1.Tests", "Cloud_WebApplication_1.Tests\Cloud_WebApplication_1.Tests.csproj", "{DD317C95-22E2-49C9-AB45-0AC4366A39EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{F707976B-808E-4CB8-B14D-48028E52E9DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{0D488C0D-CC3B-4182-9354-890240F1A10B}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{6B8F2F36-7D49-4E82-B1C8-B60A12C85C7C}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\CloudWebApplication1.json = PublishScripts\Templates\CloudWebApplication1.json
+		PublishScripts\Templates\CloudWebApplication1.param.dev.json = PublishScripts\Templates\CloudWebApplication1.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +37,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D488C0D-CC3B-4182-9354-890240F1A10B} = {F707976B-808E-4CB8-B14D-48028E52E9DD}
+		{6B8F2F36-7D49-4E82-B1C8-B60A12C85C7C} = {F707976B-808E-4CB8-B14D-48028E52E9DD}
 	EndGlobalSection
 EndGlobal
